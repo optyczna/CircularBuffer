@@ -4,10 +4,8 @@
 
 int main()
 {
-<<<<<<< HEAD
+
    CircularBuffer<char> cbuf3(0);
-=======
->>>>>>> 0f75e1ac74252945ebc483f0af24746237f083ed
     CircularBuffer<int> cbuf(10);
     std::cout << "Capacity: " << cbuf.capacity() <<std::endl;
     std::cout << "Is empty? " << std::boolalpha << cbuf.empty() <<std::endl;
@@ -37,9 +35,6 @@ int main()
     std::for_each(cbuf.begin(),cbuf.end(),[](int& a){a*=a;});
     for(auto it = cbuf.begin(); it !=cbuf.end();++it)
         std::cout << *it <<std::endl;
-<<<<<<< HEAD
 
-=======
->>>>>>> 0f75e1ac74252945ebc483f0af24746237f083ed
     return 0;
 }

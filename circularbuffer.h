@@ -52,12 +52,7 @@ CircularBuffer<T>::CircularBuffer(size_type buffer_capacity){
     }
     catch (const std::invalid_argument &arg){
         std::cout << arg.what() <<std::endl;
-    };
-    if(buffer_capacity>0){
-        _buffer_capacity = buffer_capacity;
-        _size = 0;
-        _head = _tail = 0;
-    } //tu trzeba rzucić wyjątek
+    }
 }
 
 template<typename T>
